@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Count Occurrences</title>
+<script>
+function countOccurrences(numbers, target)
+{
+let count = 0;
+for (let number of numbers)
+{
+if (number === target)
+{
+count++;
+}
+}
+return count;
+}
+function runCountOccurrences()
+{
+let storedNumbers = [5, 7, 9, 5, 2, 3, 5, 8, 5];
+let numberToFind = 5;
+let occurrences = countOccurrences(storedNumbers, numberToFind);
+document.getElementById("result").innerText = `The number ${numberToFind} occurs
+${occurrences} times.`;
+}
+</script>
+</head>
+<body>
+<h1>Count Occurrences Example</h1>
+<p>Click the button to count occurrences of a number in an array.</p>
+<button onclick="runCountOccurrences()">Count Occurrences</button>
+<p id="result"></p>
+</body>
+</html>

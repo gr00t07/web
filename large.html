@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Add two integers</title>
+<script type="text/javascript">
+var i1, i2, i3, i4, i5;
+var largest, smallest;
+i1 = parseInt(window.prompt("Please enter first integer", "0"));
+i2 = parseInt(window.prompt("Please enter second integer", "0"));
+i3 = parseInt(window.prompt("Please enter third integer", "0"));
+i4 = parseInt(window.prompt("Please enter fourth integer", "0"));
+i5 = parseInt(window.prompt("Please enter fifth integer", "0"));
+largest = i1;
+smallest = i1;
+if (i2 > largest) { largest = i2; }
+if (i3 > largest) { largest = i3; }
+if (i4 > largest) { largest = i4; }
+if (i5 > largest) { largest = i5; }
+if (i2 < smallest) { smallest = i2; }
+if (i3 < smallest) { smallest = i3; }
+if (i4 < smallest) { smallest = i4; }
+if (i5 < smallest) { smallest = i5; }
+document.writeln(largest + " is the largest.<br>");
+document.writeln(smallest + " is the smallest.");
+</script>
+</head>
+</html>

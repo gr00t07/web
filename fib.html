@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fibonacci Sequence</title>
+</head>
+<body>
+<h2><center id="fibonacci-sequence"></center></h2>
+<script type="text/javascript">
+let a = 0, b = 1, c = 0;
+let output = "";
+while (c <= 21)
+{
+output += b + "<br/>";
+c = a + b;
+a = b;
+b = c;
+}
+document.getElementById("fibonacci-sequence").innerHTML = output;
+</script>
+</body>
+</html>
