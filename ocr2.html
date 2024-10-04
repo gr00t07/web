@@ -1,0 +1,14 @@
+<html>
+<body bgcolor=red>
+<script type="text/javascript">
+var array=[10,22,13,25,10,67,10,68];
+var search=10;
+var count=array.reduce(function(n,val)
+{
+return n+(val===search);
+},0);
+document.write("Searching Element:10</br>")
+document.write("Number of count in the Array:"+count);
+</script>
+</body>
+</html>
